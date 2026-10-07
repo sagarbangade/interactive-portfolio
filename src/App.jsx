@@ -332,11 +332,12 @@ export default function App() {
   useEffect(() => {
     let loaded = 0;
     const frames = [];
+    const baseUrl = import.meta.env.BASE_URL || '/';
 
     for (let i = 0; i < FRAME_COUNT; i++) {
       const img = new Image();
       const padded = String(i).padStart(2, '0');
-      img.src = `/frames/frame_${padded}.webp`;
+      img.src = `${baseUrl}frames/frame_${padded}.webp`;
       img.onload = () => {
         loaded++;
         setLoadedCount(loaded);
@@ -349,7 +350,7 @@ export default function App() {
     framesRef.current = frames;
 
     const centerImg = new Image();
-    centerImg.src = '/center.webp';
+    centerImg.src = `${baseUrl}center.webp`;
     centerImg.onload = () => {
       loaded++;
       setLoadedCount(loaded);
