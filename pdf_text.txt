@@ -1,0 +1,237 @@
+=== PAGE 1 ===
+BUILD A CURSOR-TRACKING
+ 3D PORTFOLIO HERO
+ A simple 3-step workflow: create the character → generate the animation → build the
+ interactive hero.
+ STEP 01
+Create the character
+ image
+ChatGPT
+ STEP 02
+Turn it into a
+directional video
+ Google Flow
+ STEP 03
+Build the complete
+ hero
+Antigramity
+ sl_tech_journal  Full-stack developer  Freelancer
+
+
+=== PAGE 2 ===
+sl_tech_journal    Cursor-Tracking Hero Tutorial
+2
+THE 3-STEP WORKFLOW
+This guide turns the cursor-tracking hero from the reel into a repeatable workflow. Follow the steps in order
+and keep the prompts exactly as provided below.
+01
+IMAGE CREATION
+Use ChatGPT. Upload your own photo first, then upload the provided character/reference image. Paste the Step 1 prompt.
+02
+VIDEO CREATION
+Use Google Flow. Give it the generated character image and paste the Step 2 animation prompt.
+03
+HERO BUILD
+Use Antigramity. Put the generated image and video inside your project's public folder, open the root folder with the AI agent, then paste the Step 3 master prompt.
+TOOLS USED
+Step 1 — ChatGPT        Step 2 — Google Flow        Step 3 — Antigramity
+Tip: If the first Antigramity attempt does not create the smooth cursor animation correctly, simply tell the AI
+to fix the cursor animation and refine the tracking until it is smooth.
+
+
+=== PAGE 3 ===
+sl_tech_journal    Cursor-Tracking Hero Tutorial
+3
+STEP 01 — IMAGE CREATION
+Tool: ChatGPT
+Upload your photo first, then upload the provided image below as the second/reference image. Paste the
+prompt exactly.
+REFERENCE IMAGE PROVIDED FOR STEP 01
+Expected result: a polished 3D character image that keeps your identity recognizable while following the
+reference's style, pose, framing, lighting and red background.
+
+
+=== PAGE 4 ===
+sl_tech_journal    Cursor-Tracking Hero Tutorial
+4
+STEP 01 — PROMPT
+ PROMPT — PART 1
+Use this prompt with your photo as the first image and the uploaded image as the second/reference
+image:
+Create a stylized 3D digital portrait using my uploaded photo as the PRIMARY IDENTITY REFERENCE and
+the second uploaded image as the STYLE, COMPOSITION, AND COLOR REFERENCE.
+Preserve my exact facial identity, facial structure, skin tone, hairstyle, and recognizable features
+from my photo. Do not replace or redesign my face.
+Recreate the reference image’s overall look: high-quality polished 3D/animated character portrait,
+expressive large eyes, soft realistic skin shading, detailed hair strands, subtle blush, natural
+glossy lips, elegant facial proportions, and a friendly confident expression.
+Match the same framing and composition as the reference: centered head-and-shoulders portrait,
+looking slightly upward/to the side, with the subject occupying the central area and clean negative
+space around them.
+Use a bright vivid red background with a smooth clean gradient and strong visual contrast against
+the subject. Keep the background minimal with no objects or text.
+Make the result premium, polished, cinematic, highly detailed, smooth 3D-rendered illustration,
+while keeping my identity recognizable.
+Do not copy the reference person's identity. Use only its visual style, pose, framing, lighting,
+colors, and artistic treatment.
+
+
+=== PAGE 5 ===
+sl_tech_journal    Cursor-Tracking Hero Tutorial
+5
+STEP 02 — VIDEO CREATION
+Tool: Google Flow
+Use the character image generated in Step 1 as the visual reference. Paste the complete Step 2 prompt
+below to generate the directional character animation.
+Goal: the character should smoothly follow a cursor around the screen, with continuous head + eye
+movement and a fixed camera/background.
+
+
+=== PAGE 6 ===
+sl_tech_journal    Cursor-Tracking Hero Tutorial
+6
+STEP 02 PROMPT — PART 1
+Use the provided character image as the exact visual reference.
+Create a smooth interactive-character animation designed specifically for a website cursor-tracking
+hero section.
+The character is a cute young woman with curly dark hair, fair warm skin, large expressive brown
+eyes, silver hoop earrings, and an off-white sweater. Show only her head and shoulders against a
+perfectly solid bright red background.
+The camera must remain completely fixed and frontal.
+The animation must demonstrate CONTINUOUS directional head and eye movement, as if the character is
+naturally following a cursor moving freely around her.
+Create smooth transitions through all directions:
+center → up → upper-right → right → lower-right → down → lower-left → left → upper-left →
+center.
+Also include smooth diagonal positions between every major direction.
+The head movement must NOT jump between poses. Every directional change must blend smoothly and
+naturally, with subtle eye movement leading the head movement.
+The character should be able to look:
+- directly forward
+- slightly up
+- slightly down
+- slightly left
+- slightly right
+- upper-left
+- upper-right
+- lower-left
+- lower-right
+
+
+=== PAGE 7 ===
+sl_tech_journal    Cursor-Tracking Hero Tutorial
+7
+STEP 02 PROMPT — PART 2
+Make the transitions fluid and continuous so that intermediate cursor positions would naturally
+correspond to intermediate head positions.
+Keep the character's face, hair, eyes, clothing, proportions, lighting and identity perfectly
+consistent throughout.
+Only the eyes, head and very subtle hair movement should animate.
+No talking.
+No lip movement.
+No body movement.
+No hand movement.
+No camera movement.
+No zoom.
+No background movement.
+The bright red background must remain perfectly flat and uniform.
+The animation should feel like a premium interactive portfolio website character that is
+continuously looking toward the user's mouse cursor.
+Smooth cinematic 3D cartoon animation, high-quality facial consistency, natural head rotation,
+subtle eye tracking, soft realistic motion, seamless directional transitions.
+
+
+=== PAGE 8 ===
+sl_tech_journal    Cursor-Tracking Hero Tutorial
+8
+STEP 03 — BUILD THE COMPLETE HERO
+Tool: Antigramity (recommended for this workflow)
+Before pasting the master prompt, prepare your project exactly like this:
+1
+Create/open your project root folder.
+2
+Inside it, create a folder named <b>public</b>.
+3
+Place the generated character image inside <b>public</b>.
+4
+Place the generated video inside <b>public</b> as <b>character.mp4</b>.
+5
+Open the root folder with your AI coding agent.
+6
+Paste the complete Step 3 master prompt.
+If the AI creates the page but the cursor tracking is not smooth on the first attempt, tell it: “Fix the cursor
+animation.” Then ask it to correct the tracking/transition behavior rather than rebuilding the whole concept.
+
+
+=== PAGE 9 ===
+sl_tech_journal    Cursor-Tracking Hero Tutorial
+9
+STEP 03 — MASTER PROMPT
+ MASTER PROMPT — PART 1
+master prompt
+I have placed a character animation video in `public/character.mp4`. The video features a character
+against a solid background whose head turns in 8 directional poses (clockwise/counter-clockwise),
+with a neutral pose looking directly at the camera at the end.
+I want you to build an award-winning, luxury portfolio hero section with an ultra-smooth, zero-lag,
+zero-ghosting cursor-tracking character animation.
+### CRITICAL TECHNICAL CONSTRAINTS (DO NOT VIOLATE):
+1. **DO NOT USE CSS 3D TRANSFORMS ON THE PAGE/VIDEO:** Never use `perspective`, `rotateX`, or
+`rotateY` on the canvas or container. The page and character's body must stay 100% rock-solid
+motionless. ONLY the character's head should rotate.
+2. **DO NOT SEEK OR PLAY THE MP4 VIDEO AT RUNTIME IN THE BROWSER:** Generated MP4s have only 1
+keyframe. In-browser `video.currentTime` seeking causes severe lag and freezes, and calling
+`video.play()` causes uncontrolled background playback.
+3. **PRE-EXTRACT WEBP FRAMES WITH PYTHON / OPENCV:**
+  - Write a python script using `cv2` to inspect the video's frame count and timeline.
+  - Identify the exact frame numbers for the 8 compass directions (UP, UP-RIGHT, RIGHT, DOWN-RIGHT,
+DOWN, DOWN-LEFT, LEFT, UP-LEFT) and the CENTER neutral frame.
+  - Pre-extract 64 high-quality WebP frames along the 360° circular head rotation trajectory into
+`public/frames/` (each frame ~5.6° apart), plus `center.webp`.
+4. **ZERO-GHOSTING 60 FPS CANVAS RENDERER:**
+  - Preload the frames in React into an image array.
+  - In a `requestAnimationFrame` loop, calculate the cursor's angle relative to the character's face
+center (`atan2(dy, dx)`).
+  - Use shortest-path circular angular lerp (`lerpAngle`) with a fast response factor (`~0.26`) so
+it tracks in ~35ms with zero lag.
+  - Map the smoothed angle to the nearest frame index (0..63).
+  - Draw **EXACTLY ONE crisp frame at 100% opacity** on the canvas. DO NOT alpha-blend overlapping
+frames (alpha blending creates double-face ghosting).
+5. **CENTER EYE CONTACT (DEADZONE):**
+  - When the cursor is near the character's face (within ~12% screen radius), switch to
+`center.webp` so she looks directly into the user's eyes.
+6. **SEAMLESS BACKGROUND:**
+  - Detect the exact RGB hex color of the video background and match the page and canvas background
+to it seamlessly.
+
+
+=== PAGE 10 ===
+sl_tech_journal    Cursor-Tracking Hero Tutorial
+10
+MASTER PROMPT — PART 2
+### UI & HERO SECTION DESIGN:
+- **Full Screen:** The canvas must cover the full viewport (`100vw`, `100vh`, `object-fit: cover`).
+- **Header:** A floating, frosted-glass navigation pill centered at the very top (`[WORK]`,
+`[ABOUT]`, `[CONTACT]`) with `backdrop-filter: blur(20px)`.
+- **Hero Typography (Bottom-Left):**
+ - "Hi, I'm" in clean, spaced modern sans-serif.
+ - Name (e.g., "Lohitha") in large, elegant cursive script (like Google Fonts 'Dancing Script') with
+a subtle soft drop shadow.
+ - A compact 3-line bio about Full Stack Development (max-width ~340px) that does not crowd the
+character.
+ - Two stylish white pill buttons: `Resume` (solid white with arrow icon) and `Let's Talk` (frosted
+glass/white border).
+- **Custom Magnetic Cursor:** A glowing white custom cursor dot with a smooth trailing aura ring
+that scales up on interactive hover.
+
+
+=== PAGE 11 ===
+sl_tech_journal    Cursor-Tracking Hero Tutorial
+11
+READY TO BUILD YOUR OWN?
+I’m sl_tech_journal — a freelancer creating customized portfolios and website designs.
+If you want me to handle your entire website — from design and animations to development — DM me.
+ FOLLOW FOR MORE TECH CONTENT  WEB DEVELOPMENT  AI  CODING  PORTFOLIOS
+ Workflow recap: ChatGPT → Google Flow → Antigramity
+ Save this guide and reuse the prompts whenever you want to build a cursor-reactive character hero.
+
+
