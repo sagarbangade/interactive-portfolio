@@ -293,6 +293,7 @@ export default function App() {
 
   // Mouse & Animation State
   const mouseRef = useRef({ x: window.innerWidth * 0.7, y: window.innerHeight * 0.3 });
+  const smoothMouseRef = useRef({ x: window.innerWidth * 0.7, y: window.innerHeight * 0.3 });
   const auraRef = useRef({ x: window.innerWidth * 0.7, y: window.innerHeight * 0.3 });
   const angleRef = useRef(0);
   const cursorDotRef = useRef(null);
@@ -421,18 +422,27 @@ export default function App() {
       const faceCenterX = cssWidth * 0.505;
       const faceCenterY = cssHeight * 0.44;
 
-      const dx = mouse.x - faceCenterX;
-      const dy = mouse.y - faceCenterY;
-      const dist = Math.hypot(dx, dy);
+      // 2D smoothed cursor coordinates for silky continuous tracking
+      const smooth = smoothMouseRef.current;
+      smooth.x += (mouse.x - smooth.x) * 0.28;
+      smooth.y += (mouse.y - smooth.y) * 0.28;
 
-      // Deadzone threshold for direct eye contact (~12% of screen dimension)
-      const deadzone = Math.min(cssWidth, cssHeight) * 0.12;
+      const dx = smooth.x - faceCenterX;
+      const dy = smooth.y - faceCenterY;
+
+      // Elliptical natural eye-contact zone calibrated to human widescreen interaction
+      const deadzoneX = cssWidth * 0.075;
+      const deadzoneY = cssHeight * 0.095;
+      const normDist = Math.hypot(dx / deadzoneX, dy / deadzoneY);
 
       let currentFrame;
 
-      if (dist < deadzone) {
+      if (normDist < 1.0) {
         currentFrame = centerFrameRef.current;
         setIsEyeContact(true);
+        // Seamlessly align angleRef with current direction so exiting eye contact has ZERO 180° spin!
+        const targetAngle = Math.atan2(dy, dx);
+        angleRef.current = targetAngle;
       } else {
         setIsEyeContact(false);
         const targetAngle = Math.atan2(dy, dx);
